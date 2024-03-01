@@ -1,3 +1,9 @@
+the React APP result is in news_web_app folder
+
+"scripts": { "start": "react-scripts start", "build": "react-scripts build", "test": "jest", "eject": "react-scripts eject" },
+
+npm start to start the dev server react npm test to start the test case with jest
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

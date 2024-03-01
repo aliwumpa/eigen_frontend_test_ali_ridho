@@ -1,0 +1,10 @@
+.news-app__article-detail-card .ant-card-cover {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.news-app__article-detail-card .ant-card-cover img {
+    width: 100%;
+    height: auto;
+}

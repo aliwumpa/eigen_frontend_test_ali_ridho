@@ -1,9 +1,15 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App', () => {
+  it('renders the App component', async () => {
+    // Render the component
+    render(<App />);
+
+    // Wait for the component to update
+		await waitFor(() => {
+      expect(screen.getByText('Article List')).toBeInTheDocument();
+		}, { timeout: 3000 });
+  });
 });

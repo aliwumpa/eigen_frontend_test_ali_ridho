@@ -1,0 +1,30 @@
+
+
+.news-app__header-banner-container {
+    position: relative;
+}
+
+.news-app__header-banner-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.news-app__header-banner-quotes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.news-app__header-banner-quotes p {
+    font-family: "Style Script", cursive;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 568px) {
+    .news-app__header-banner-quotes p {
+        font-size: 16px;
+    }
+}
